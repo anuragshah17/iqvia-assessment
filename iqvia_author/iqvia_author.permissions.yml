@@ -1,0 +1,8 @@
+view author entity:
+  title: 'View Author entity'
+add author entity:
+  title: 'Add Author entity'
+edit author entity:
+  title: 'Edit Author Entity'
+delete author entity:
+  title: 'Delete Author entity'

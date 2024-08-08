@@ -1,0 +1,8 @@
+name: Iqvia author entity
+description: Provides an author entity
+core_version_requirement: ^9 || ^10
+package: Custom
+type: module
+dependencies:
+  - drupal:jsonapi
+  - jsonapi_resources:jsonapi_resources

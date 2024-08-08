@@ -1,0 +1,47 @@
+entity.author.canonical:
+  path: '/author/{author}'
+  defaults:
+    _entity_view: 'author'
+    _title: 'Author Content'
+  requirements:
+    _entity_access: 'author.view'
+
+entity.author.collection:
+  path: '/author/list'
+  defaults:
+    _entity_list: 'author'
+    _title: 'Author List'
+  requirements:
+    _permission: 'author.view'
+
+author.add:
+  path: '/author/add'
+  defaults:
+    _entity_form: author.add
+    _title: 'Add Author'
+  requirements:
+    _entity_create_access: 'author'
+
+entity.author.edit_form:
+  path: '/author/{author}/edit'
+  defaults:
+    _entity_form: author.edit
+    _title: 'Edit Author'
+  requirements:
+    _entity_access: 'author.edit'
+
+entity.author.delete_form:
+  path: '/author/{author}/delete'
+  defaults:
+    _entity_form: author.delete
+    _title: 'Delete Author'
+  requirements:
+    _entity_access: 'author.delete'
+
+author.author_content:
+  path: '/%jsonapi%/author/content'
+  defaults:
+    _jsonapi_resource: Drupal\iqvia_author\Resource\AuthorContent
+    _jsonapi_resource_types: ['author--author']
+  requirements:
+    _permission: 'access content'

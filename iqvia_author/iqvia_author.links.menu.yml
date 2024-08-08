@@ -1,0 +1,6 @@
+entity.author.collection:
+  title: 'Authors Listing'
+  route_name: entity.author.collection
+  parent: system.admin_content
+  description: 'List Author'
+  weight: 10

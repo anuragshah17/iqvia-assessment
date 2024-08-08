@@ -1,0 +1,5 @@
+entity.author.collection:
+  route_name: author.add
+  title: 'Add Author'
+  appears_on:
+    - entity.author.collection
